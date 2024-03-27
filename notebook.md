@@ -78,3 +78,11 @@ def build_next(patt):
                 prefix_len=next_form[prefix_len-1]
     return next_form
 ```
+- 哈希表的删除
+```C++
+unordered_map<int, int> cnt;
+int key;
+auto item = cnt.find(key);
+cnt.earse(item);
+```
+- devCPP的修改语言方法：工具——编译器选项——new document encoding（翻译：新文档的编码）——改成UTF-8——确定
