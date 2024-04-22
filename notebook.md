@@ -42,6 +42,8 @@ List<Integer> search(String text, String pattern) {
 ```
 
 - 其实kmp就是用next表来跳过前面前缀和后缀相同的部分了。核心就在于主串的指针永远不往前回溯，而是刷新子串的匹配状态。
+
+- next数组的关键是求解最长相等的前后缀
 ```Python
 def kmp_search(string, patt):
     next = build_next(patt)
